@@ -1,0 +1,120 @@
+Python 3.12.3 (main, Sep 11 2024, 14:17:37) [GCC 13.2.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+s = spam
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/idlelib/run.py", line 580, in runcode
+    exec(code, self.locals)
+  File "<pyshell#0>", line 1, in <module>
+NameError: name 'spam' is not defined
+s = 'spam'
+#comentario random
+print (s)
+spam
+len(s)
+4
+s[0]
+'s'
+s[1]
+'p'
+s[-1]
+'m'
+s[-2]
+'a'
+s[len(s) - 1]
+'m'
+s[1:3]
+'pa'
+s[1:]
+'pam'
+s[0:3]
+'spa'
+s[:-1]
+'spa'
+s[:]
+'spam'
+s + 'eggs'
+'spameggs'
+s*6
+'spamspamspamspamspamspam'
+S[0] = 'z'
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/idlelib/run.py", line 580, in runcode
+    exec(code, self.locals)
+  File "<pyshell#17>", line 1, in <module>
+NameError: name 'S' is not defined. Did you mean: 's'?
+s= 'Z' + s[1:]
+s
+'Zpam'
+e = 'eggs'
+L = list(e)
+print(L)
+['e', 'g', 'g', 's']
+L[0] = 'z'
+L
+['z', 'g', 'g', 's']
+''.join(L)
+'zggs'
+s = 'SpamEggsSpam'
+s.find('pa')
+1
+s.find('pa',3)
+9
+s.find(s)
+0
+s.find('z')
+-1
+S.replace('Eggs','bacon')
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/idlelib/run.py", line 580, in runcode
+    exec(code, self.locals)
+  File "<pyshell#31>", line 1, in <module>
+NameError: name 'S' is not defined. Did you mean: 's'?
+
+s.replace('Eggs','bacon')
+'SpambaconSpam'
+s.upper()
+'SPAMEGGSSPAM'
+print("s is alpha", sisalpha())
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/idlelib/run.py", line 580, in runcode
+    exec(code, self.locals)
+  File "<pyshell#35>", line 1, in <module>
+NameError: name 'sisalpha' is not defined
+print("s is alpha", s.isalpha())
+s is alpha True
+print("s is digit", s.isdigit())
+s is digit False
+s='spams-spam-eggs-bacon-'
+s.split('-')
+['spams', 'spam', 'eggs', 'bacon', '']
+line= 'aaa\t,bbb\t,\nccccc,\tdd\n'
+print(line)
+aaa	,bbb	,
+ccccc,	dd
+
+line.rstrip()
+'aaa\t,bbb\t,\nccccc,\tdd'
+line.lstrip()
+'aaa\t,bbb\t,\nccccc,\tdd\n'
+line.rstrip().split(',')
+['aaa\t', 'bbb\t', '\nccccc', '\tdd']
+dir(S)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/idlelib/run.py", line 580, in runcode
+    exec(code, self.locals)
+  File "<pyshell#45>", line 1, in <module>
+NameError: name 'S' is not defined. Did you mean: 's'?
+dir(s)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+'%s, eggs, and %s' % ('spam', 'SPAM!')
+'spam, eggs, and SPAM!'
+'{}, eggs, and {}'.format('spam', 'SPAM!')
+'spam, eggs, and SPAM!'
+f'{s}'
+'spams-spam-eggs-bacon-'
+s
+'spams-spam-eggs-bacon-'
+'spam'
+'spam'
+'{0}'.format(s)
+'spams-spam-eggs-bacon-'
