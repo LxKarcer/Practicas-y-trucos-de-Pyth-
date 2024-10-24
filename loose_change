@@ -46,11 +46,18 @@
                                                                 #funciona en casuisticas negativas, decimales y nulas
 
 def loose_change(money):
-    # dic_monedas =  {'Nickels': 5, 'Pennies': 1, 'Dimes': 10, 'Quarters': 25}
-    money_check = money
+    Nickels = 5
+    Pennies = 1
+    Dimes = 10
+    Quarters = 25
+    lista_monedas = [Quarters, Dimes, Nickels, Pennies]
+    dinero_a_restar = money
     dic_nuevo = {'Nickels': 0, 'Pennies': 0, 'Dimes': 0, 'Quarters': 0}
+    for coin in lista_monedas:
 
-    #2 ciclos for, uno para
+        while dinero_a_restar >= coin:
+            dinero_a_restar = dinero_a_restar - coin
+            print(dinero_a_restar)
 
 
 
